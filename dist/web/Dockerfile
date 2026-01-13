@@ -102,5 +102,5 @@ COPY --from=build [             \
     "./"                        \
 ]
 
-FROM nginx
+FROM nginx:1.29.4-trixie
 COPY --from=raw . /usr/share/nginx/html
